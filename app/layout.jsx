@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
                 <Image alt="oolites logo" src={logo} className="h-[150px] w-[200px]"/>
               </div>
               <div className="">
-                <ul className="flex gap-5 text-blue-500 head-ul text-[20px]">
+                <ul className="flex gap-5 text-blue-500 head-ul lg:text-[20px] text-[12px] lg:mr-0 mr-5">
                   <li><a href="#aboutus">About Us</a></li>
                   <li><a href="#ourteam">Our Team</a></li>
                   <li><a href="#events">Events</a></li>
@@ -32,9 +32,9 @@ export default function RootLayout({ children }) {
           </div>
         </section>
         {children}
-        <footer className="bg-blue-500 flex justify-center items-center py-[60px]">
+        <footer className="bg-blue-500 flex  justify-center items-center py-[60px]">
           <div className="container">
-            <div className="flex items-center justify-between ">
+            <div className="flex lg:flex-row flex-col lg:gap-0 gap-5 items-center justify-between ">
               <div className="">
                 <ul className="flex flex-col gap-4">
                   <li><u>Useful Links</u></li>

@@ -19,13 +19,13 @@ export default function Home() {
 
   return (
     <>
-      <section className="banner-section" id="contact">
-        <Image src={banner} className=" banner-img " alt="banner image" />
+      <section className="banner-section lg:h-[100vh] h-[1000px]" id="contact">
+        <Image src={banner} className=" banner-img lg:h-100vh] h-[1000px] object-cover" alt="banner image" />
         <div className="container abs-center">
-          <div className="flex justify-between items-center mt-[70px]">
-            <div className="text-white">
-              <h1 className="text-[45px] py-5">Koolites Changing Lives</h1>
-              <ul className="text-[20px] flex flex-col gap-3">
+          <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[70px] mt-[350px] ">
+            <div className="text-white lg:w-full w-[95%]">
+              <h1 className="text-[45px] py-5 lg:text-left text-center">Koolites Changing Lives</h1>
+              <ul className="text-[20px] flex flex-col lg:items-start items-center gap-3">
                 <li className="flex gap-2 items-center">
                   <Image src={check} alt="check" width={30} height={30} />{" "}
                   <span className="text-[20px]">Koolites Change Lives</span>
@@ -52,7 +52,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white py-5 px-3 rounded-md max-w-[650px] lg:w-[550px]">
+            <div className="bg-white py-5 px-3 rounded-md lg:mt-0 lg:w-[550px] w-[90%] mt-5">
               <h1 className="text-blue-500 text-[45px] text-center py-5 px-3">
                 Contact Us
               </h1>
@@ -73,7 +73,7 @@ export default function Home() {
         <div style={{ margin: "0 auto" }} className="container">
           <div className="">
             <h1 className="text-[45px] text-blue-500 text-center py-5">About Us</h1>
-            <div className="text-neutral-800 flex flex-col gap-6">
+            <div className="text-neutral-800 flex flex-col gap-6 lg:w-full w-[95%] lg:text-left text-center mr-auto ml-auto">
             <p>
               At Koolites Changing Lives, we are driven by a passion to uplift
               and empower the vibrant communities of Jamaica. Founded in [insert

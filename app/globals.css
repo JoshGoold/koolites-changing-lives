@@ -56,7 +56,7 @@ body {
 }
 
 .banner-section{
-  height: 100vh;
+
 }
 
 .abs-center{
@@ -68,7 +68,7 @@ body {
 }
 
 .banner-img{
-  height: 100vh;
+
   margin-top: -150px;
   position: relative;
 }
@@ -105,3 +105,8 @@ body {
  
 }
 
+@media only screen and (max-width: 767px){
+  .banner-section::before{
+    height: 1000px;
+  }
+}

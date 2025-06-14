@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <section className="banner-section lg:h-[100vh] h-[1000px]" id="contact">
-        <Image src={banner} className=" banner-img lg:h-100vh] h-[1000px] object-cover" alt="banner image" />
+        <Image src={banner} className=" banner-img lg:h-[100vh] h-[1000px] object-cover" alt="banner image" />
         <div className="container abs-center">
           <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[70px] mt-[350px] ">
             <div className="text-white lg:w-full w-[95%]">

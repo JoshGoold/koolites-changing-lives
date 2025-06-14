@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           <div className="container ">
             <div className="flex justify-between items-center ">
               <div className="">
-                <Image alt="oolites logo" src={logo} className="h-[150px] w-[200px]"/>
+                <Image alt="oolites logo" src={logo} className="lg:h-[150px] lg:w-[200px] h-[70px] w-[100px]"/>
               </div>
               <div className="">
                 <ul className="flex gap-5 text-blue-500 head-ul lg:text-[20px] text-[12px] lg:mr-0 mr-5">

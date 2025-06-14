@@ -1,0 +1,128 @@
+"use client"
+import React, { useState } from 'react';
+import decoy from "@/app/assets/woman.png"
+import Image from 'next/image';
+
+
+const the_team = {
+  "Marlon": {
+    description: "Marlon uplifts youth with inspiring mentorship programs.",
+    position: "Youth Program Coordinator",
+    img: decoy
+  },
+  "Sasha": {
+    description: "Sasha ensures every donation makes a big impact.",
+    position: "Fundraising Manager",
+    img: decoy
+  },
+  "Jevon": {
+    description: "Jevon builds stronger communities through volunteer outreach.",
+    position: "Community Outreach Lead",
+    img: decoy
+  },
+  "Tanisha": {
+    description: "Tanisha brings hope with health and wellness initiatives.",
+    position: "Health Program Director",
+    img: decoy
+  },
+  "Devon": {
+    description: "Devon keeps our operations running smoothly every day.",
+    position: "Operations Manager",
+    img: decoy
+  },
+  "Kemesha": {
+    description: "Kemesha empowers students with educational resources.",
+    position: "Education Specialist",
+    img: decoy
+  },
+  "Rohan": {
+    description: "Rohan spreads our mission through vibrant storytelling.",
+    position: "Communications Officer",
+    img: decoy
+  },
+  "Aaliyah": {
+    description: "Aaliyah supports families with emergency relief efforts.",
+    position: "Relief Coordinator",
+    img: decoy
+  },
+  "Omar": {
+    description: "Omar drives sustainable projects for rural communities.",
+    position: "Sustainability Lead",
+    img: decoy
+  },
+  "Shanice": {
+    description: "Shanice connects donors to life-changing causes.",
+    position: "Donor Relations Specialist",
+    img: decoy
+  }
+};
+
+const TeamSection = () => {
+  const teamMembers = Object.entries(the_team).map(([name, data]) => ({
+    name,
+    ...data,
+  }));
+
+  const [startIndex, setStartIndex] = useState(0);
+
+  const handleNext = () => {
+    setStartIndex((prevIndex) =>
+      prevIndex + 3 >= teamMembers.length ? 0 : prevIndex + 3
+    );
+  };
+
+  const handlePrev = () => {
+    setStartIndex((prevIndex) =>
+      prevIndex - 3 < 0 ? Math.floor(teamMembers.length / 3) * 3 : prevIndex - 3
+    );
+  };
+
+  const displayedMembers = teamMembers.slice(startIndex, startIndex + 3);
+
+  return (
+    <section className="team-section bg-gray-900 py-12" id='ourteam'>
+      <div style={{ margin: "0 auto" }} className="container mx-auto px-4">
+        <div>
+          <h1 className="text-white text-center text-[45px] font-bold mb-8">
+            Our Team
+          </h1>
+          <div className="relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {displayedMembers.map((member) => (
+                <div
+                  key={member.name}
+                  className="bg-white rounded-lg shadow-lg p-6 text-center"
+                >
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray-600 italic">{member.position}</p>
+                  <p className="text-gray-700 mt-2">{member.description}</p>
+                </div>
+              ))}
+            </div>
+            <button
+              onClick={handlePrev}
+              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 focus:outline-none"
+            >
+              &#8592;
+            </button>
+            <button
+              onClick={handleNext}
+              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 focus:outline-none"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TeamSection;

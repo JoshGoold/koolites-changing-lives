@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-        <section className="sticky top-0 h-[150px] z-[1000] bg-white shadow-lg shadow-neutral-800 flex justify-center items-center">
+        <section className="sticky top-0 lg:h-[150px] h-[90px] z-[1000] bg-white shadow-lg shadow-neutral-800 flex justify-center items-center">
           <div className="container ">
             <div className="flex justify-between items-center ">
               <div className="">

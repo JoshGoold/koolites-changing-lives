@@ -22,7 +22,7 @@ export default function Home() {
       <section className="banner-section lg:h-[100vh] h-[1000px]" id="contact">
         <Image src={banner} className=" banner-img lg:h-[100vh] h-[1000px] object-cover" alt="banner image" />
         <div className="container abs-center">
-          <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[70px] mt-[350px] ">
+          <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[100px] mt-[350px] ">
             <div className="text-white lg:w-full w-[95%]">
               <h1 className="text-[45px] py-5 lg:text-left text-center">Koolites Changing Lives</h1>
               <ul className="text-[20px] flex flex-col lg:items-start items-center gap-3">
@@ -52,7 +52,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white py-5 px-3 rounded-md lg:mt-0 lg:w-[550px] w-[90%] mt-5">
+            <div className="bg-white py-5 px-3 rounded-md lg:mt-0 lg:w-[950px] w-[90%] mt-5">
               <h1 className="text-blue-500 text-[45px] text-center py-5 px-3">
                 Contact Us
               </h1>

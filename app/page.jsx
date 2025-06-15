@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="banner-section lg:h-[100vh] h-[1000px]" id="contact">
+      <section className="banner-section  lg:h-[100vh] h-[1000px]">
         <Image src={banner} className=" banner-img lg:h-[100vh] h-[1000px] object-cover" alt="banner image" />
         <div className="container abs-center">
           <div className="flex lg:flex-row flex-col justify-between items-center lg:mt-[100px] mt-[350px] ">
@@ -52,19 +52,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white py-5 px-3 rounded-md lg:mt-0 lg:w-[950px] w-[90%] mt-5">
-              <h1 className="text-blue-500 text-[45px] text-center py-5 px-3">
-                Contact Us
-              </h1>
-              <form className="head-form text-[20px] flex flex-col gap-1 ml-auto mr-auto">
-                <input type="text" placeholder="Enter your Name" />
-                <input type="text" placeholder="Enter your Organization" />
-                <input type="tel" placeholder="Enter your Phone Number" />
-                <input type="email" placeholder="Enter your Email" />
-                <textarea placeholder="Enter your message"></textarea>
-                <button className="mt-5 bg-blue-500 text-white py-3" type="submit">Send Message</button>
-              </form>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -73,7 +61,8 @@ export default function Home() {
         <div style={{ margin: "0 auto" }} className="container">
           <div className="">
             <h1 className="text-[45px] text-blue-500 text-center py-5">About Us</h1>
-            <div className="text-neutral-800 flex flex-col gap-6 lg:w-full w-[95%] lg:text-left text-center mr-auto ml-auto">
+     
+            <div className="text-neutral-800 flex flex-col  gap-6 lg:w-full lg:text-left text-center mr-auto ml-auto">
             <p>
               At Koolites Changing Lives, we are driven by a passion to uplift
               and empower the vibrant communities of Jamaica. Founded in [insert
@@ -109,8 +98,10 @@ export default function Home() {
               can change lives, one act of kindness at a time.
             </p>
             </div>
+             
+            </div>
           </div>
-        </div>
+       
       </section>
 
       <TeamSection/>

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-        <section className="sticky top-0 lg:h-[150px] h-[90px] z-[1000] bg-white shadow-lg shadow-neutral-800 flex justify-center items-center">
+        <section className="sticky top-0 lg:h-[150px] h-[90px] z-[1000]  bg-white shadow-lg shadow-neutral-800 flex justify-center items-center">
           <div className="container ">
             <div className="flex justify-between items-center ">
               <div className="">
@@ -32,9 +32,28 @@ export default function RootLayout({ children }) {
           </div>
         </section>
         {children}
-        <footer className="bg-blue-500 flex  justify-center items-center py-[60px]">
+        <footer id="contact" className="bg-blue-500 flex  justify-center items-center py-[60px]">
           <div className="container">
             <div className="flex lg:flex-row flex-col lg:gap-0 gap-5 items-center justify-between ">
+              <div className="">
+                <Image alt="koolites logo" src={logo} height={100} width={150}/>
+              </div>
+              
+              
+              <div className=" flex-1 py-5 px-3 rounded-md lg:mt-0 lg:w-[950px] w-[90%] mt-5">
+              <h1 className="text-white text-[45px] text-center py-5 px-3">
+                Contact Us
+              </h1>
+              <form className="head-form text-[20px] flex flex-col gap-1 ml-auto mr-auto">
+                <input type="text" placeholder="Enter your Name" />
+                <input type="text" placeholder="Enter your Organization" />
+                <input type="tel" placeholder="Enter your Phone Number" />
+                <input type="email" placeholder="Enter your Email" />
+                <textarea placeholder="Enter your message"></textarea>
+                <button className="mt-5 bg-white text-blue-500 py-3" type="submit">Send Message</button>
+              </form>
+            
+              </div>
               <div className="">
                 <ul className="flex flex-col gap-4">
                   <li><u>Useful Links</u></li>
@@ -43,20 +62,6 @@ export default function RootLayout({ children }) {
                   <li><a href="#events">Events</a></li>
                   <li><a href="#contact">Contact Us</a></li>
                 </ul>
-              </div>
-              <div className="">
-                <Image alt="koolites logo" src={logo} height={200} width={250}/>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <h2>Contact Us</h2>
-                <form className="flex flex-col items-center gap-1 footer-form">
-                  <input type="text" placeholder="Enter your Name"/>
-                  <input type="text" placeholder="Enter your Organization"/>
-                  <input type="tel" placeholder="Enter your Phone Number" />
-                  <input type="email" placeholder="Enter your Email"/>
-                  <textarea placeholder="enter your message"></textarea>
-                  <button type="submit">Send Message</button>
-                </form> 
               </div>
             </div>
           </div>

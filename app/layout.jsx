@@ -3,6 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 
 import logo from "./assets/koolites_logo.jpg"
+import Form from "@/components/Form";
 
 export const metadata = {
   title: "Koolites Changing Lives",
@@ -38,22 +39,7 @@ export default function RootLayout({ children }) {
               <div className="">
                 <Image alt="koolites logo" src={logo} height={100} width={150}/>
               </div>
-              
-              
-              <div className=" flex-1 py-5 px-3 rounded-md lg:mt-0 lg:w-[950px] w-[90%] mt-5">
-              <h1 className="text-white text-[45px] text-center py-5 px-3">
-                Contact Us
-              </h1>
-              <form className="head-form text-[20px] flex flex-col gap-1 ml-auto mr-auto">
-                <input type="text" placeholder="Enter your Name" />
-                <input type="text" placeholder="Enter your Organization" />
-                <input type="tel" placeholder="Enter your Phone Number" />
-                <input type="email" placeholder="Enter your Email" />
-                <textarea placeholder="Enter your message"></textarea>
-                <button className="mt-5 bg-white text-blue-500 py-3" type="submit">Send Message</button>
-              </form>
-            
-              </div>
+              <Form/>
               <div className="">
                 <ul className="flex flex-col gap-4">
                   <li><u>Useful Links</u></li>

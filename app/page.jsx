@@ -17,6 +17,8 @@ export default function Home() {
 
   const [completed, setCompleted] = useState([e1,e2])
 
+ 
+
   return (
     <>
       <section className="banner-section  lg:h-[100vh] h-[1000px]">

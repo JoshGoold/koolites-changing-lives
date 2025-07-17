@@ -52,7 +52,7 @@ const TeamSection = () => {
     <section className="team-section bg-gray-900 py-12" id="ourteam">
       <div className="container mx-auto px-4">
         <h1 className="text-white text-center text-[45px] font-bold mb-8">
-          Our Leadership Team
+          KCLI Organization Structure
         </h1>
         <div className="relative">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

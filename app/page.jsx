@@ -60,12 +60,7 @@ export default function Home() {
           </h1>
           <div className="text-neutral-800 flex flex-col gap-6 lg:w-full lg:text-left text-center">
             <p>
-              Established in September 2014, <b>Koolites Changing Lives
-              International</b> is a non-profit charity group united by a shared love
-              of music and a passion for philanthropy. Formed through connections
-              made on the social platforms of KOOL 97FM radio, our 22-member team,
-              both local and overseas, is dedicated to transforming lives, one
-              charitable event at a time.
+              Established in September 2014 <b>KOOLITES CHANGING LIVES INTERNATIONAL</b> is a Non- Profit charity group comprising of individuals from different backgrounds joined together by a love of music and a passion for philanthropy who met via the social platforms of KOOL 97FM radio and decided to become agents of change, one charitable event at a time. 
             </p>
             <p>
               Our mission is to support the development of Early Childhood
@@ -77,20 +72,20 @@ export default function Home() {
               children.
             </p>
             <p>
-              With a structure of 14 core members and a total of 22 volunteers, we
-              combine diverse expertise to drive impactful change. Our initiatives
-              include infrastructure improvements, provision of school supplies,
-              and community outreach, all aimed at breaking the cycle of poverty
-              and fostering hope in Jamaican communities.
+              Our entity is structured with a cohort of Fourteen (14) members both local and overseas and focused on a mandate to provide charity assistance to Early Childhood Institutions in Jamaica (ECI/Basic Schools). 
             </p>
             <p>
-              Join us in our journey to empower Jamaica’s youth and build stronger,
-              self-sufficient communities. Together, we can change lives, one act
-              of kindness at a time.
+              The mission of <b>KOOLITES CHANGING LIVES INTERNATIONAL</b> remains solid in our aim to provide support to the development of ECI's, increase awareness of the needs of these schools in various communities and to solicit financial support through sponsorship and fundraising. We are also committed to the execution of beautification projects and seek to encourage tangible support through the provision of need based supplies such as books, computers, etc. to these institutions. 
+            </p>
+            <p>
+              As <b>KOOLITES CHANGING LIVES INTERNATIONAL</b> members our personal commitment is to volunteering time, knowledge , experience and resources for the betterment of this cause with the ultimate vision of laying a foundation for the development of our children’s future
             </p>
           </div>
         </div>
       </section>
+
+      <TeamSection />
+
 
       <section className="projects-section py-12 bg-gray-100" id="projects">
         <div className="container mx-auto px-4">
@@ -99,10 +94,7 @@ export default function Home() {
           </h1>
           <div className="text-neutral-800 flex flex-col gap-6">
             <p className="text-center">
-              Koolites Changing Lives International has made a significant impact
-              on Early Childhood Institutions across Jamaica through dedicated
-              fundraising and community support. Below are some of our key
-              projects:
+              Track record of KCLI Assistance to Early Childhood Institution through fundraising
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -217,7 +209,6 @@ export default function Home() {
         </div>
       </section>
 
-      <TeamSection />
 
       <section className="events-section py-12" id="events">
         <div className="container mx-auto px-4">

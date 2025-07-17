@@ -15,16 +15,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-        <section className="sticky top-0 lg:h-[150px] h-[90px] z-[1000]  bg-white shadow-lg shadow-neutral-800 flex justify-center items-center">
+        <section className="sticky top-0 lg:h-[120px] h-[90px] z-[1000]  bg-white shadow-lg shadow-neutral-800 flex justify-center items-center">
           <div className="container ">
             <div className="flex justify-between items-center ">
               <div className="">
-                <Image alt="oolites logo" src={logo} className="lg:h-[150px] lg:w-[200px] h-[70px] w-[100px]"/>
+                <Image alt="oolites logo" src={logo} className="lg:h-[120px] lg:w-[170px] h-[70px] w-[100px]"/>
               </div>
               <div className="">
                 <ul className="flex gap-5 text-blue-500 head-ul lg:text-[20px] text-[12px] lg:mr-0 mr-5">
                   <li><a href="#aboutus">About Us</a></li>
                   <li><a href="#ourteam">Our Team</a></li>
+                  <li><a href="#projects">Projects</a></li>
                   <li><a href="#events">Events</a></li>
                   <li><a href="#contact">Contact Us</a></li>
                 </ul>

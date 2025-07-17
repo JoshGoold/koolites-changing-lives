@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
                   <li><a href="#aboutus">About Us</a></li>
                   <li><a href="#ourteam">Our Team</a></li>
                   <li><a href="#projects">Projects</a></li>
-                  <li><a href="#events">Events</a></li>
+                  <li className="lg:block hidden"><a href="#events">Events</a></li>
                   <li><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>
